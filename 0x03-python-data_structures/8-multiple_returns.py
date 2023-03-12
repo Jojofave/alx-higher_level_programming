@@ -1,8 +1,8 @@
 #!/usr/bin/python3
->>> result = multiple_returns("hello world")
->>> print(result)
-(11, 'h')
-
->>> result = multiple_returns("")
->>> print(result)
-(0, None)
+def multiple_returns(sentence):
+    my_tuple = ()
+    if len(sentence) == 0:
+        my_tuple = 0, "None"
+    else:
+        my_tuple = len(sentence), sentence[0]
+    return my_tuple
